@@ -1,43 +1,4 @@
-﻿/*int[] CredsdateArray(int size)
-{
-int[] newArray = new int[size];
-
-for(int i = 0; i < size; i++){
-    Console.Write("input number: ");
-    newArray[i] = Convert.ToInt32(Console.ReadLine());
-}
-return newArray;
-}*/
-
-
-
-/*Задайте массив из 12 элементов, заполненный случайными 
-числами из промежутка [-9, 9]. Найдите сумму отрицательных 
-и положительных элементов массива.*/
-
-/*int SumOfNegatives(int[] array)
-{
-    int sum = 0;
-
-    for(int i = 0; i < array.Length; i++)
-    {
-        if(array[i] < 0)
-            sum += array[i];
-    }
-    return sum;
-}
-
-Console.Write("Input a number of elements: ");
-int size = Convert.ToInt32(Console.ReadLine());
-
-int[] myArray = CreateArray(size);
-
-int resoult = SumOfNegatives(myArray);
-
-ShowArray(myArray);
-Console.WriteLine("Sum of negative elements is " + resoult);
-*/
-void ShowArray(int[] array)
+﻿void ShowArray(int[] array)
 {
     for(int i = 0; i < array.Length; i++)
         Console.Write(array[i] + " ");
