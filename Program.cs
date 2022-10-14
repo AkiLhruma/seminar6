@@ -9,13 +9,7 @@ for(int i = 0; i < size; i++){
 return newArray;
 }*/
 
-void ShowArray(int[] array)
-{
-    for(int i = 0; i < array.Length; i++)
-        Console.Write(array[i] + " ");
 
-    Console.WriteLine();
-}
 
 /*Задайте массив из 12 элементов, заполненный случайными 
 числами из промежутка [-9, 9]. Найдите сумму отрицательных 
@@ -43,6 +37,24 @@ int resoult = SumOfNegatives(myArray);
 ShowArray(myArray);
 Console.WriteLine("Sum of negative elements is " + resoult);
 */
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+
+    Console.WriteLine();
+}
+
+int[] CreateArray(int size, int minValue, int maxValue)
+{
+int[] newArray = new int[size];
+
+for(int i = 0; i < size; i++)
+{
+    newArray[i] = new Random().Next(minValue, maxValue);
+}
+return newArray;
+}
 
 /*Напишите программу замены элементов массива: положительные 
 элементы замените на соответствующие отрицательные, и наоборот.*/
@@ -54,16 +66,6 @@ Console.WriteLine("Sum of negative elements is " + resoult);
 количество элементов массива, значения которых лежат 
 в отрезке [10,99].*/
 /*
-int[] CreateArray(int size, int minValue, int maxValue)
-{
-int[] newArray = new int[size];
-
-for(int i = 0; i < size; i++)
-{
-    newArray[i] = new Random().Next(minValue, maxValue);
-}
-return newArray;
-}
 
 int[] ChangeArray(int[] array)
 {
@@ -92,16 +94,6 @@ ShowArray(myArray2);
 /*Задайте массив. Напишите программу, которая определяет, 
 присутствует ли заданное число в массиве.*/
 /*
-int[] CreateArray(int size, int minValue, int maxValue)
-{
-int[] newArray = new int[size];
-
-for(int i = 0; i < size; i++)
-{
-    newArray[i] = new Random().Next(minValue, maxValue);
-}
-return newArray;
-}
 
 bool Digit(int[] array, int number)
 {
@@ -132,17 +124,6 @@ Console.WriteLine(digit);
 /*Задайте одномерный массив из 12 случайных чисел. Найдите 
 количество элементов массива, значения которых лежат 
 в отрезке [10,99].*/
-
-int[] CreateArray(int size, int minValue, int maxValue)
-{
-int[] newArray = new int[size];
-
-for(int i = 0; i < size; i++)
-{
-    newArray[i] = new Random().Next(minValue, maxValue);
-}
-return newArray;
-}
 
 int Summ(int[] array, int n, int m){
     int sum = 0;
